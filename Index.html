@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="UTF-8">
+    <meta name="description" content="My Gym Website!">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Hritik Dubey">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+<title>Filter List</title>
+<style>
+    
+      *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    body{
+        background-color: rgb(247, 188, 246);
+        color: rgb(32, 42, 42);
+        width: 100vw;
+      }
+
+      input{
+        box-sizing: border-box;
+        text-align: start;
+        color: black;
+        text-shadow: 3px 4px 7px black;
+
+      }
+
+
+      #names{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+        text-align: center;
+        box-sizing: border-box;
+        box-shadow: -5px 13px 3px 17px black;
+        
+      }
+
+      li{
+        box-shadow: 2px -2px 5px 5px black;
+      }
+
+      li:hover{
+        font-size: larger;
+      }
+
+      li h5:hover{
+        font-size: larger;
+      }
+    
+
+
+    /*/Designing For Mobile*/
+
+    @media (max-width: 451px) and (min-width: 0px){
+         body{
+            background-color: rgb(237, 202, 148);
+         }
+
+         div{
+            width: 100%;
+
+         }
+
+         #names{
+            width: 100vw;
+         }
+         
+
+
+    }
+
+    /*Designing for the tablet*/
+
+    @media (max-width: 678px) and (min-width: 451px){
+        div{
+            width: 100%;
+
+         }
+
+         #names{
+            width: 80vw;
+         }
+    }
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+</head>
+<body>
+    
+    <div class="container">
+        <h1 class="center-align">
+            My Contacts
+        </h1>
+
+        <input type="text" id="filterInput" placeholder="Search Names....">
+        <ul id="names" class="collection with-header">
+            <li class="collection-header">
+                <h5> A </h5>
+            </li>
+            <li class="collection-item">
+                <a href="#"> Aniket Bansal </a>
+            </li>
+            <li class="collection-item">
+                <a href="#"> Abhik Manjee</a>
+            </li>
+            <li class="collection-item">
+                <a href="#"> Amitabh Bacchan </a>
+            </li>
+            <li class="collection-item">
+                <a href="#"> Amit Ranjan Azad </a>
+            </li>
+            <li class="collection-item">
+                <a href="#"> Anubhav Ranjan</a>
+            </li>
+            <li class="collection-item">
+                <a href="#"> Aryan Soni </a>
+            </li>
+            <li class="collection-header">
+                <h5> B </h5>
+            </li>
+            <li class="collection-item">
+                <a href="#"> Balaga Roop Sai</a>
+            </li>
+            <li class="collection-item">
+                <a href="#"> Bhagvati Prasad Mishra</a>
+            </li>
+            <li class="collection-item">
+                <a href="#"> Baman Irani</a>
+            </li>
+            <li class="collection-header">
+                <h5> C </h5>
+            </li>
+            <li class="collection-item">
+                <a href="#"> Chinmay Bhagat</a>
+            </li>
+            <li class="collection-item">
+                <a href="#"> Chaitanya Waphare</a>
+            </li>
+            <li class="collection-item">
+                <a href="#"> Cheeranjit Singh</a>
+            </li>
+            <li class="collection-header">
+                <h5> D </h5>
+            </li>
+            <li class="collection-item">
+                <a href="#"> Durgesh Mathur</a>
+            </li>
+            <li class="collection-item">
+                <a href="#"> Divyanshu Kumar</a>
+            </li>
+            <li class="collection-item">
+                <a href="#"> Dhanush Prajapati</a>
+            </li>
+            <li class="collection-header">
+                <h5> E </h5>
+            </li>
+            <li class="collection-item">
+                <a href="#"> Elvish Yadav</a>
+            </li>
+            <li class="collection-item">
+                <a href="#"> Engineer Sudesh Tripathi</a>
+            </li>
+            <li class="collection-header">
+                <h5> F </h5>
+            </li>
+            <li class="collection-item">
+                <a href="#"> Faizal Shiekh</a>
+            </li>
+            <li class="collection-item">
+                <a href="#"> Fourier Mehta</a>
+            </li>
+            <li class="collection-header">
+                <h5> G </h5>
+            </li>
+            <li class="collection-item">
+                <a href="#"> Gurmeet Singh</a>
+            </li>
+            <li class="collection-item">
+                <a href="#"> Guneet Kandhway</a>
+            </li>
+            <li class="collection-item">
+                <a href="#"> Glenn Maxwell</a>
+            </li>
+            <li class="collection-header">
+                <h5> H </h5>
+            </li>
+            <li class="collection-item">
+                <a href="#"> Hritik Dubey</a>
+            </li>
+            <li class="collection-item">
+                <a href="#"> Himanshu Maurya</a>
+            </li>
+            <li class="collection-item">
+                <a href="#"> Heaven Panday</a>
+            </li>
+            <li class="collection-header">
+                <h5> I </h5>
+            </li>
+            <li class="collection-item">
+                <a href="#"> Indira Gandhi</a>
+            </li>
+            <li class="collection-item">
+                <a href="#"> Isha Bharadwaj</a>
+            </li>
+            <li class="collection-item">
+                <a href="#"> Iscon Mishra</a>
+            </li>
+            <li class="collection-header">
+                <h5> J </h5>
+            </li>
+            <li class="collection-item">
+                <a href="#"> Joseph Bailey</a>
+            </li>
+            <li class="collection-item">
+                <a href="#"> John Abraham</a>
+            </li>
+            <li class="collection-item">
+                <a href="#"> Jai Shankar Prasad</a>
+            </li>
+            <li class="collection-header">
+                <h5> K </h5>
+            </li>
+            <li class="collection-item">
+                <a href="#">Karan Mehta</a>
+            </li>
+            <li class="collection-item">
+                <a href="#"> Kohima </a>
+            </li>
+            <li class="collection-item">
+                <a href="#"> Kalam</a>
+            </li>
+            <li class="collection-header">
+                <h5> L </h5>
+            </li>
+            <li class="collection-item">
+                <a href="#"> Lovely Pandit</a>
+            </li>
+            <li class="collection-item">
+                <a href="#"> Lala Lajpat Ray</a>
+            </li>
+            <li class="collection-header">
+                <h5> M </h5>
+            </li>
+            <li class="collection-item">
+                <a href="#"> Mata Prasad Dwivedi</a>
+            </li>
+            <li class="collection-item">
+                <a href="#"> Murugnathan Ponnuswamy</a>
+            </li>
+            <li class="collection-header">
+                <h5> N </h5>
+            </li>
+            <li class="collection-item">
+                <a href="#"> Neelam Singh</a>
+            </li>
+            <li class="collection-item">
+                <a href="#"> Neha Dubey</a>
+            </li>
+            <li class="collection-header">
+                <h5> O </h5>
+            </li>
+            <li class="collection-item">
+                <a href="#"> Odean Smith</a>
+            </li>
+            <li class="collection-item">
+                <a href="#"> Om Sagar Mishra</a>
+            </li>
+            <li class="collection-item">
+                <a href="#"> Oindrilla Das</a>
+            </li>
+            <li class="collection-header">
+                <h5> P </h5>
+            </li>
+            <li class="collection-item">
+                <a href="#"> Premji Purohit</a>
+            </li>
+            <li class="collection-item">
+                <a href="#"> Peter Fernandeze</a>
+            </li>
+            <li class="collection-header">
+                <h5> Q </h5>
+            </li>
+            <li class="collection-item">
+                <a href="#"> Quantam Nath</a>
+            </li>
+            <li class="collection-item">
+                <a href="#"> Quit Das</a>
+            </li>
+            <li class="collection-header">
+                <h5> R </h5>
+            </li>
+            <li class="collection-item">
+                <a href="#"> Rover Panday</a>
+            </li>
+            <li class="collection-item">
+                <a href="#"> Ram Prasad Bismil</a>
+            </li>
+            <li class="collection-header">
+                <h5> S </h5>
+            </li>
+            <li class="collection-item">
+                <a href="#"> S . JaiShankar</a>
+            </li>
+            <li class="collection-item">
+                <a href="#"> Sweta Mehta</a>
+            </li>
+            <li class="collection-header">
+                <h5> T </h5>
+            </li>
+            <li class="collection-item">
+                <a href="#"> Tom Cruise</a>
+            </li>
+            <li class="collection-item">
+                <a href="#"> Tornado Prasad</a>
+            </li>
+            <li class="collection-header">
+                <h5> U </h5>
+            </li>
+            <li class="collection-item">
+                <a href="#"> Urban</a>
+            </li>
+            <li class="collection-item">
+                <a href="#"> Undergraduate Degree Holder</a>
+            </li>
+            <li class="collection-header">
+                <h5> V </h5>
+            </li>
+            <li class="collection-item">
+                <a href="#"> Vijay Prasad </a>
+            </li>
+            <li class="collection-item">
+                <a href="#"> Vikram Batra</a>
+            </li>
+            <li class="collection-header">
+                <h5> W </h5>
+            </li>
+            <li class="collection-item">
+                <a href="#"> Waiver Mishra</a>
+            </li>
+            <li class="collection-item">
+                <a href="#"> Walter Smith</a>
+            </li>
+            <li class="collection-header">
+                <h5> X </h5>
+            </li>
+            <li class="collection-item">
+                <a href="#"> Xpedia Hub</a>
+            </li>
+            <li class="collection-item">
+                <a href="#"> X-Ray Man</a>
+            </li>
+            <li class="collection-header">
+                <h5> Y </h5>
+            </li>
+            <li class="collection-item">
+                <a href="#"> Yeshwanth Prasad</a>
+            </li>
+            <li class="collection-item">
+                <a href="#"> Younger Yadav</a>
+            </li>
+            <li class="collection-header">
+                <h5> Z </h5>
+            </li>
+            <li class="collection-item">
+                <a href="#"> Zeevan Panday</a>
+            </li>
+            <li class="collection-item">
+                <a href="#"> Zebra Mehta</a>
+            </li>
+            
+        </ul>
+    </div>
+
+    <script>
+        //Get Input Element
+       let filterInput = document.getElementById('filterInput');
+       // Add event listener
+
+       filterInput.addEventListener('keyup', filterNames);
+
+       function filterNames(){
+        // Get value of Input
+        let filterValue = document.getElementById('filterInput').value.toUpperCase();
+   
+        //Get names ul
+      let ul = document.getElementById('names');
+
+        // Get li's from ul
+        let li = ul.querySelectorAll('li.collection-item');
+
+        // loop through collection.iten li's
+        for(let i = 0; i < li.length; i++){
+            let a = li[i].getElementsByTagName('a')[0];
+            //If matched
+            if( a.innerHTML.toUpperCase().indexOf(filterValue) > -1 ){
+               li[i].style.display = '';
+            }else{
+               li[i].style.display = 'none';
+            }
+        }
+       }
+    </script>
+
+</body>
+</html>
